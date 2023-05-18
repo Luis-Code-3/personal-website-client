@@ -1,0 +1,59 @@
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 1.4rem 2rem;
+    background-color: rgb(26,22,38);
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid palegreen; */
+    gap: 2.5rem;
+}
+
+.linkContainer div {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+}
+
+.navLinks {
+    color: rgb(255, 255, 255, .6);
+    transition: all .1s linear;
+}
+
+.navLinks:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navLinks:hover span {
+    color: rgb(181, 117, 242);
+}
+
+.linkContainer div a {
+    display: flex;
+    align-items: center;
+}
+
+.purpText {
+    color: rgb(160, 63, 251);
+}
+
+.svg {
+    height: 30px;
+    width: 30px;
+    transition: all .1s linear;
+    color: rgb(255, 255, 255, .7);
+}
+
+.svg:hover {
+    color: rgb(181, 117, 242);
+}

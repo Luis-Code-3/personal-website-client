@@ -1,0 +1,47 @@
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    width: 100%;
+    z-index: 1;
+    padding: 2rem 2rem;
+    background-color: rgb(26,22,38);
+    gap: 30%;
+    font-size: 90%;
+}
+
+.linkContainer {
+    display: flex;
+    gap: 2.7rem;
+    color: rgb(255, 255, 255, .4);
+}
+
+.navLinks {
+    transition: all .1s linear;
+}
+
+.navLinks:hover {
+    color: rgb(255, 255, 255, .8);
+}
+
+.iconContainer {
+    display: flex;
+    gap: .4rem;
+}
+
+.iconContainer a {
+    display: flex;
+    align-items: center;
+}
+
+.svg {
+    height: 25px;
+    width: 25px;
+    transition: all .1s linear;
+    color: rgb(255, 255, 255, .3);
+}
+
+.svg:hover {
+    color: rgb(181, 117, 242);
+}
