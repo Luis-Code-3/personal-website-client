@@ -4,10 +4,31 @@
 import styles from "./navbar.module.css"
 import Link from "next/link"
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa"
+import { useState, useEffect } from "react"
 
 const Navbar = () => {
+    const [colorNav, setColorNav] = useState(false);
+    //console.log("render");
+    
+
+    const changeBackground = () => {
+        if(window.scrollY >= 30) {
+            setColorNav(true)
+        } else {
+            setColorNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeBackground)
+
+        return () => {
+            window.removeEventListener('scroll', changeBackground)
+        }
+    }, [])
+
   return (
-    <nav className={styles.navContainer}>
+    <nav className={`${styles.navContainer} ${colorNav && styles.linkActive}`}>
         <p>.Luis-Cordova<span className={styles.purpText}>()</span></p>
         <div className={styles.linkContainer}>
             <Link  href={"/"} className={styles.navLinks}>.about<span className={styles.purpText}>()</span></Link>

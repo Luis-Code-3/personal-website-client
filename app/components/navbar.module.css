@@ -3,11 +3,13 @@
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
-    position: sticky;
-    top: 0;
     width: 100%;
-    z-index: 1;
     padding: 1.4rem 2rem;
+    background: transparent;
+    transition: all .1s linear;
+}
+
+.linkActive {
     background-color: rgb(26,22,38);
 }
 

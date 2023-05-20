@@ -10,7 +10,6 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   max-width: 100vw;
-  overflow-x: hidden;
   background-color: rgb(20, 18, 28);
   color: rgb(242, 245, 248, .9);
   /* padding: 1.3% 2%; */
@@ -19,4 +18,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.stickyNav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
