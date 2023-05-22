@@ -3,8 +3,10 @@
   height: 150vh;
   display: flex;
   gap: 10%;
-  padding-left: calc(10vw - 2rem);
-  padding-right: calc(10vw - 2rem);
+  padding-left: calc(15vw - 2rem);
+  padding-right: calc(15vw - 2rem);
+  /* border: 1px solid red; */
+  width: 100%;
 }
 
 .backBar {
@@ -20,7 +22,7 @@
   width: 1px;
   top: 50vh;
   bottom: 0;
-  left: calc(10vw - 2rem);
+  left: calc(15vw - 2rem);
   /* background-color: rgb(105, 38, 213); */
   background: linear-gradient(180deg, rgb(105, 38, 213), rgb(20, 18, 28));
   z-index: 2;
@@ -32,7 +34,7 @@
   height: 10px;
   top: 50vh;
   z-index: 2;
-  left: calc(10vw - 2rem - 4px);
+  left: calc(15vw - 2rem - 4px);
   background-color: rgb(105, 38, 213);
   border-radius: 50%;
 }
@@ -72,6 +74,10 @@
 }
 
 .contentContainer {
-  border: 1px solid red;
-  flex-grow: 1;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  padding-top: 4rem;
 }

@@ -1,0 +1,86 @@
+.expContainer {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    background-color: rgba(54, 49, 75, 0.2)
+}
+
+.navTitles {
+    border-right: 2px solid rgb(105, 80, 208, .4);
+    width: 27%;
+}
+
+.titleBlock {
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 1.2rem 0;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    cursor: pointer;
+    /* transition: all .1s linear;
+    animation: fadeIn .5s backwards; */
+    /* animation-delay: .3s; */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.activeSelect {
+    background-color: rgba(54, 49, 75, 0.3);
+}
+
+.titleHeader {
+    color: rgb(255, 255, 255, .75);
+    transition: all .1s linear;
+}
+
+.activeTitle {
+    color: rgb(117, 91, 220);
+}
+
+.titleBlock p {
+    font-size: 70%;
+    font-weight: 500;
+    color: rgb(255, 255, 255, .4);
+}
+
+.jobInfoContainer {
+    width: 73%;
+    height: 50vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.textContainer {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rgb(93, 0, 255); */
+    width: 100%;
+    position: relative;
+}
+
+.bulletPoint {
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background-color: rgb(105, 80, 208);
+    margin-top: 4px;
+}
+
+.textContainer p {
+    width: 97%;
+    font-size: 98%;
+    font-weight: 500;
+    color: rgb(255, 255, 255, .75);
+}

@@ -1,5 +1,7 @@
 import styles from './page.module.css'
 import Link from 'next/link'
+import About from './components/About'
+import InfoSection from './components/InfoSection'
 
 export default function Home() {
   return (
@@ -13,8 +15,8 @@ export default function Home() {
       <div className= {styles.scrollLight}></div>
       <div className={styles.backBar}></div>
       <div className={styles.contentContainer}>
-        <h1>Hello</h1>
-        <Link href={'/projects'}>Projects</Link>
+          <About/>
+          <InfoSection/>
       </div>
     </main>
   )
