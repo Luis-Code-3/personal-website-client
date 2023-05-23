@@ -1,9 +1,11 @@
 import styles from './page.module.css'
-import Link from 'next/link'
 import About from './components/About'
 import InfoSection from './components/InfoSection'
+import ProjectSection from './components/ProjectSection'
+import projects from "../data/projects.json"
 
 export default function Home() {
+
   return (
     <main className={styles.main}>
       <div className={styles.scrollTarget}>
@@ -17,6 +19,7 @@ export default function Home() {
       <div className={styles.contentContainer}>
           <About/>
           <InfoSection/>
+          <ProjectSection projects={projects}/>
       </div>
     </main>
   )

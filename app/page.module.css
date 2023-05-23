@@ -1,6 +1,6 @@
 .main {
   padding:2%;
-  height: 150vh;
+  /* height: 150vh; */
   display: flex;
   gap: 10%;
   padding-left: calc(15vw - 2rem);
@@ -14,7 +14,7 @@
   width: 1px;
   background: linear-gradient(0deg, rgb(71, 36, 126, .6) 85%, rgb(20, 18, 28) );
   /* background-color: rgb(71, 36, 126, .6); */
-  height: 100%;
+  /* height: 100vh; */
 }
 
 .scrollLight {

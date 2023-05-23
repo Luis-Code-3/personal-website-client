@@ -1,0 +1,70 @@
+[
+    {
+      "id": 1,
+      "name": "Collect Data",
+      "smallDescription": "A project that tracks collectible's sales data & displays analytics to users. Collects sales from eBay, Goldin Auctions, & Heritage",
+      "bigDescription": "five or seven sentences here",
+      "techStack": ["React", "Express", "Node", "MongoDB", "Render", "Netlify"],
+      "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png",
+      "images": [
+        "image1 url here",
+        "image2 url here",
+        "image3 url here",
+        "image4 url here",
+        "image5 url here"
+      ],
+      "github": "github link url",
+      "liveApp": "deployed app link url here"
+    },
+    {
+        "id": 2,
+        "name": "SnipedIO",
+        "smallDescription": "A project that tracks collectible's sales data & displays analytics to users. Collects sales from eBay, Goldin Auctions, & Heritage",
+        "bigDescription": "five or seven sentences here",
+        "techStack": ["React", "Express", "Node", "MongoDB", "Render", "Netlify"],
+        "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png",
+        "images": [
+          "image1 url here",
+          "image2 url here",
+          "image3 url here",
+          "image4 url here",
+          "image5 url here"
+        ],
+        "github": "github link url",
+        "liveApp": "deployed app link url here"
+      },
+      {
+        "id": 3,
+        "name": "Glassdoor",
+        "smallDescription": "A project that tracks collectible's sales data & displays analytics to users. Collects sales from eBay, Goldin Auctions, & Heritage",
+        "bigDescription": "five or seven sentences here",
+        "techStack": ["React", "Express", "Node", "MongoDB", "Render", "Netlify"],
+        "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png",
+        "images": [
+          "image1 url here",
+          "image2 url here",
+          "image3 url here",
+          "image4 url here",
+          "image5 url here"
+        ],
+        "github": "github link url",
+        "liveApp": "deployed app link url here"
+      },
+      {
+        "id": 4,
+        "name": "Personal Website",
+        "smallDescription": "A project that tracks collectible's sales data & displays analytics to users. Collects sales from eBay, Goldin Auctions, & Heritage",
+        "bigDescription": "five or seven sentences here",
+        "techStack": ["React", "Express", "Node", "MongoDB", "Render", "Netlify"],
+        "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png",
+        "images": [
+          "image1 url here",
+          "image2 url here",
+          "image3 url here",
+          "image4 url here",
+          "image5 url here"
+        ],
+        "github": "github link url",
+        "liveApp": "deployed app link url here"
+      }
+  ]

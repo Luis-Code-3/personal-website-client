@@ -8,7 +8,6 @@ import { useState, useEffect } from "react"
 
 const Navbar = () => {
     const [colorNav, setColorNav] = useState(false);
-    //console.log("render");
     
 
     const changeBackground = () => {
@@ -19,8 +18,17 @@ const Navbar = () => {
         }
     }
 
+    const scrollView = (id:string, offset:number) => {
+        const section = document.getElementById(id);
+        if (section) {
+            const scrollPosition = section.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+        }
+    }
+
     useEffect(() => {
         window.addEventListener('scroll', changeBackground)
+        window.history.scrollRestoration = 'manual' // start from the top, not where you left off before manual refresh
 
         return () => {
             window.removeEventListener('scroll', changeBackground)
@@ -31,8 +39,8 @@ const Navbar = () => {
     <nav className={`${styles.navContainer} ${colorNav && styles.linkActive}`}>
         <p>.Luis-Cordova<span className={styles.purpText}>()</span></p>
         <div className={styles.linkContainer}>
-            <Link  href={"/"} className={styles.navLinks}>.about<span className={styles.purpText}>()</span></Link>
-            <Link href={"/"} className={styles.navLinks}>.projects<span className={styles.purpText}>()</span></Link>
+            <div onClick={() => scrollView('about', 100)} className={styles.navLinks}>.about<span className={styles.purpText}>()</span></div>
+            <div onClick={() => scrollView('projects', 100)} className={styles.navLinks}>.projects<span className={styles.purpText}>()</span></div>
             <Link href={"/"} className={styles.navLinks}>.contact<span className={styles.purpText}>()</span></Link>
             <div>
                 <a href="https://github.com/Luis-Code-3/"><FaGithubSquare href="" className={styles.svg}/></a>

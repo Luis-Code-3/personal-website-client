@@ -10,7 +10,8 @@
 }
 
 .linkActive {
-    background-color: rgb(26,22,38);
+    background-color: rgb(20, 18, 28, .8);
+    backdrop-filter: blur(10px);
 }
 
 .linkContainer {
@@ -30,6 +31,7 @@
 .navLinks {
     color: rgb(255, 255, 255, .6);
     transition: all .1s linear;
+    cursor: pointer;
 }
 
 .navLinks:hover {

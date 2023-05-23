@@ -1,0 +1,72 @@
+.cardContainer {
+    /* border: 1px solid red; */
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    transition: all .1s ease-out;
+}
+
+.cardContainer:hover {
+    transform: translateY(-6px);
+}
+
+.cardContainer:hover .infoBox {
+    background-color: rgba(54, 49, 75, 0.7);
+}
+
+.imageBox {
+    overflow: hidden;
+    /* border: 1px solid red; */
+    width: 100%;
+    position: relative;
+    height: 65%;
+}
+
+.projectPicture {
+    object-fit: cover;
+    position: absolute;
+    left: -7%;
+}
+
+.infoBox {
+    padding: 1rem;
+    font-size: 90%;
+    /* border: 1px solid yellow; */
+    flex-grow: 1;
+    background-color: rgba(54, 49, 75, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    transition: all .1s ease-out;
+}
+
+.titleBox {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.titleBox div {
+    height: 1px;
+    flex-grow: 1;
+    background-color: rgb(105, 80, 208);
+}
+
+.description {
+    /* border: 1px solid green; */
+    font-size: 90%;
+    font-weight: 500;
+    color: rgb(243, 228, 255, .8);
+}
+
+.techStack {
+    /* border: 1px solid blue; */
+    font-size:80%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(243, 228, 255, .3);
+    font-weight: 500;
+}
