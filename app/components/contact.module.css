@@ -1,0 +1,60 @@
+.contactContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.titleBox {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+}
+
+.titleBox h1 {
+    font-weight: 600;
+    font-size: 160%;
+}
+  
+.paraSpan {
+    color: rgb(160, 63, 251);
+}
+  
+.contactBar {
+    height: 1px;
+    flex-grow: 1;
+    background-color: rgb(79, 38, 213, .5);
+}
+
+.description {
+    width: 65%;
+    text-align: center;
+    font-size: 120%;
+    color: rgb(255, 255, 255, .55);
+}
+
+.linkBox {
+    width: 43%;
+    display: flex;
+    justify-content: space-between ;
+    margin-left: -36px;
+}
+
+.linkBox a {
+    border: 2px solid rgb(160, 63, 251, .7);
+    border-radius: 2px;
+    padding: .6rem 1.3rem;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 600;
+    font-size: 90%;
+    transition: all .1s linear;
+}
+
+.linkBox a:hover {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(160, 63, 251);
+}

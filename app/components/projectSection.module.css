@@ -6,6 +6,7 @@
     gap: 1.5rem;
     /* transform: translateY(-20px); */
     animation: fadeIn 1s backwards;
+    margin-top: 5rem;
     /* opacity: 0; */
   }
   

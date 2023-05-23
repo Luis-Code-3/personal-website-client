@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className={styles.linkContainer}>
             <div onClick={() => scrollView('about', 100)} className={styles.navLinks}>.about<span className={styles.purpText}>()</span></div>
             <div onClick={() => scrollView('projects', 100)} className={styles.navLinks}>.projects<span className={styles.purpText}>()</span></div>
-            <Link href={"/"} className={styles.navLinks}>.contact<span className={styles.purpText}>()</span></Link>
+            <div onClick={() => scrollView('contact', 100)} className={styles.navLinks}>.contact<span className={styles.purpText}>()</span></div>
             <div>
                 <a href="https://github.com/Luis-Code-3/"><FaGithubSquare href="" className={styles.svg}/></a>
                 <a href="https://www.linkedin.com/in/luis-angel-cordova/"><FaLinkedin className={styles.svg}/></a>

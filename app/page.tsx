@@ -3,6 +3,7 @@ import About from './components/About'
 import InfoSection from './components/InfoSection'
 import ProjectSection from './components/ProjectSection'
 import projects from "../data/projects.json"
+import Contact from './components/Contact'
 
 export default function Home() {
 
@@ -20,6 +21,7 @@ export default function Home() {
           <About/>
           <InfoSection/>
           <ProjectSection projects={projects}/>
+          <Contact/>
       </div>
     </main>
   )
