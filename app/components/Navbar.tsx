@@ -5,9 +5,17 @@ import styles from "./navbar.module.css"
 import Link from "next/link"
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa"
 import { useState, useEffect } from "react"
+import {useRouter, usePathname, useSearchParams} from "next/navigation"
 
 const Navbar = () => {
     const [colorNav, setColorNav] = useState(false);
+
+    const router = useRouter();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+    const search = searchParams.get('a')
+    
+    
     
 
     const changeBackground = () => {
@@ -18,11 +26,15 @@ const Navbar = () => {
         }
     }
 
-    const scrollView = (id:string, offset:number) => {
-        const section = document.getElementById(id);
-        if (section) {
-            const scrollPosition = section.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+    const scrollView = async (id:string, offset:number) => {
+        if (pathname !== "/") {
+            router.push(`/?a=${id}`)
+        } else {
+            const section = document.getElementById(id);
+            if (section) {
+                const scrollPosition = section.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+            }
         }
     }
 
@@ -34,6 +46,16 @@ const Navbar = () => {
             window.removeEventListener('scroll', changeBackground)
         }
     }, [])
+
+    useEffect(() => {
+        if(search) {
+            const section = document.getElementById(search);
+            if (section) {
+                const scrollPosition = section.getBoundingClientRect().top + window.pageYOffset - 100;
+                window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+            }
+        }
+    }, [search])
 
   return (
     <nav className={`${styles.navContainer} ${colorNav && styles.linkActive}`}>
