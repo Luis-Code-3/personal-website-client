@@ -1,5 +1,4 @@
 .cardContainer {
-    /* border: 1px solid red; */
     height: 38vh;
     display: flex;
     flex-direction: column;
@@ -16,7 +15,6 @@
 
 .imageBox {
     overflow: hidden;
-    /* border: 1px solid red; */
     width: 100%;
     position: relative;
     height: 65%;
@@ -24,8 +22,9 @@
 
 .projectPicture {
     object-fit: cover;
+    width: 100%;
     position: absolute;
-    left: -7%;
+    /* left: -7%; */
 }
 
 .infoBox {
@@ -42,7 +41,6 @@
 }
 
 .titleBox {
-    /* border: 1px solid red; */
     width: 100%;
     display: flex;
     gap: .5rem;
@@ -69,4 +67,10 @@
     justify-content: space-between;
     color: rgb(243, 228, 255, .3);
     font-weight: 500;
+}
+
+@media (min-width: 1920px) {
+    .cardContainer {
+        height: 12vw;
+    }
 }

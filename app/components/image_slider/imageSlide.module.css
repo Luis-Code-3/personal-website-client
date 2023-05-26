@@ -95,3 +95,24 @@
 .activeDot {
     background-color: rgb(255, 255, 255, .4);
 }
+
+@media (max-width: 857px) {
+    .sliderContainer {
+        height: 40vw;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .containerDotsTwo {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .sliderContainer {
+        height: 55vw;
+    }
+}

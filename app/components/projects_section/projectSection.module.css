@@ -52,3 +52,49 @@
     color: rgb(255, 255, 255);
     border: 2px solid rgb(160, 63, 251);
 }
+
+@media (min-width: 1920px) {
+  .projectsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+  }
+}
+
+@media (max-width: 1080px) {
+
+  .loadMore {
+      font-size: 85%;
+      width: 18%;
+  }
+}
+
+@media (max-width: 862px) {
+
+  .loadMore {
+      font-size: 82%;
+      width: 22%;
+  }
+}
+
+@media (max-width: 615px) {
+
+  .loadMore {
+      font-size: 72%;
+      width: 30%;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .loadMore {
+      font-size: 65%;
+  }
+
+  .projectTitleContainer h1 {
+    font-weight: 600;
+    font-size: 140%;
+  }
+
+  .projectTitleContainer {
+      gap: .8rem;
+  }
+}

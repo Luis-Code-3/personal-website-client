@@ -89,11 +89,15 @@ const page = ({params}: PageProps) => {
               </div>
 
               <div className={styles.linkContainer}>
-                <a className={styles.liveLink} href={selectedProject[0].liveApp}>Visit App</a>
-                <a className={styles.iconContainer} href={selectedProject[0].github}><FaGithubSquare className={styles.svg}/></a>
-                {selectedProject[0].techStack.map((tech:string, index) => {
-                  return <span key={index}>{tech}</span>
-                })}
+                <div className={styles.linkAndGit}>
+                  <a className={styles.liveLink} href={selectedProject[0].liveApp}>Visit App</a>
+                  <a className={styles.iconContainer} href={selectedProject[0].github}><FaGithubSquare className={styles.svg}/></a>
+                </div>
+                <div className={styles.allTech}>
+                  {selectedProject[0].techStack.map((tech:string, index) => {
+                    return <span key={index}>{tech}</span>
+                  })}
+                </div>
               </div>
               <div className={styles.containerDescription}>
                 {selectedProject[0].bigDescription.split('\n').map((paragraph, index) => {

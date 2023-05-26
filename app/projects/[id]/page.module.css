@@ -114,6 +114,18 @@
     gap: 1rem;
 }
 
+.linkAndGit {
+    display: flex;
+    gap: .5rem;
+}
+
+.allTech {
+    width: 72%;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
 .linkContainer span {
     color: rgb(233, 221, 255, .4);
     font-weight: 500;
@@ -136,7 +148,8 @@
 
 .iconContainer {
     display: flex;
-    margin-left: -8px;
+    /* margin-left: -8px; */
+    align-items: center;
 }
 
 .svg {
@@ -198,4 +211,68 @@
 .notContainer p {
     color: rgb(255, 255, 255, .4);
     
+}
+
+@media (max-width: 1000px) {
+    .bigDescription {
+        font-size: 100%;
+    }
+
+    .nextLink {
+        width: 20%;
+    }
+    
+}
+
+@media (max-width: 855px) {
+    .liveLink {
+       font-size: 70%;
+       width: 30%;
+       padding: .5rem 0;
+       text-align: center;
+    }
+
+    .linkContainer {
+        gap: .3rem;
+        flex-direction: column;
+    }
+
+    .linkAndGit {
+        width: 100%;
+        display: flex;
+        gap: .5rem;
+    }
+
+    .allTech {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .iconContainer {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .linkContainer span {
+        font-size: 70%;
+    }
+
+    .nextLink {
+        width: 40%;
+        font-size: 80%;
+    }
+
+    .bigDescription {
+        font-size: 90%;
+    }
+
+    .titleBox h1 {
+        font-size: 140%;
+    }
+
+    .titleBox {
+        gap: .8rem;
+    }
 }

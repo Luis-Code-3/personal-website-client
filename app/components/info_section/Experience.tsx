@@ -73,11 +73,6 @@ const CardStockMarket = ({initialLoad}:  JobProps) => {
         <motion.div initial={{opacity: 0, y: 10}} animate={{opacity: 1, y: 0}} transition={{duration: .5, delay: initialLoad ? .75 : 0}} className={styles.jobInfoContainer}>
             <div className={styles.textContainer}>
                 <div className={styles.bulletPoint}></div>
-                <p>Launched and managed a successful social media brand dedicated to collectible cards, with a focus on sports cards, Pokémon, and Yu-Gi-Oh!</p>
-            </div>
-
-            <div className={styles.textContainer}>
-                <div className={styles.bulletPoint}></div>
                 <p>Created and implemented advertising campaigns that generated thousands of sales for partner companies. Developed custom graphics and videos with scripts, and networked with other social media accounts to amplify campaign reach.</p>
             </div>
 

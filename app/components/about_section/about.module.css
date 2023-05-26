@@ -1,5 +1,4 @@
 .sectionContainer {
-    /* border: 1px solid white; */
     display: flex;
     width: 100%;
     gap: 2rem;
@@ -125,3 +124,35 @@
         transform: translateY(0);
     }
 }
+
+@media (max-width: 1300px) {
+    .rightBox p {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .sectionContainer {
+        flex-direction: column;
+    }
+
+    .rightBox {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .rightBox p {
+        font-size: 70%;
+    }
+
+    .rightTop h1 {
+        font-weight: 600;
+        font-size: 140%;
+    }
+
+    .rightTop {
+        gap: .8rem;
+    }
+  }

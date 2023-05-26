@@ -38,6 +38,7 @@
 }
 
 .linkBox {
+    /* border: 1px solid red; */
     width: 43%;
     display: flex;
     justify-content: space-between ;
@@ -57,4 +58,66 @@
 .linkBox a:hover {
     color: rgb(255, 255, 255);
     border: 2px solid rgb(160, 63, 251);
+}
+
+@media (max-width: 1140px) {
+    .linkBox {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1140px) {
+    .linkBox {
+        width: 55%;
+    }
+
+    .description {
+        width: 80%;
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 862px) {
+    .linkBox {
+        width: 75%;
+    }
+
+    .description {
+        width: 85%;
+        font-size: 105%;
+    }
+}
+
+@media (max-width: 615px) {
+    .linkBox {
+        width: 95%;
+    }
+}
+
+@media (max-width: 475px) {
+    .linkBox {
+        width: 100%;
+        font-size: 70%;
+        margin-left: 0px;
+    }
+
+    .description {
+        width: 95%;
+        font-size: 85%;
+        margin-top: -.7rem;
+    }
+
+    .titleBox h1 {
+        font-size: 140%;
+    }
+    
+    .titleBox {
+          gap: .8rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .linkBox {
+        width: 27%;
+    }
 }

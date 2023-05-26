@@ -18,7 +18,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* border: 1px solid palegreen; */
     gap: 2.5rem;
 }
 
@@ -60,4 +59,43 @@
 
 .svg:hover {
     color: rgb(181, 117, 242);
+}
+
+@media (max-width: 650px) {
+    .linkContainer {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .navContainer p {
+        display: none;
+    }
+
+    .linkContainer {
+        gap: 2rem;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .navContainer {
+        padding: 1.4rem 1rem;
+    }
+
+    .linkContainer {
+        gap: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navLinks {
+        font-size: 90%;
+    }
+
+    .svg {
+        height: 25px;
+        width: 25px;
+    }
 }

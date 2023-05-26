@@ -57,3 +57,45 @@
     height: 4px;
     background-color: rgb(120, 91, 184, .3);
 }
+
+@media (max-width: 1080px) {
+
+    .navName {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .navName {
+        font-size: 83%;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .navName {
+        font-size: 9px;
+        padding: .5rem .3rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .infoContainer {
+        margin-top: -8%;
+    }
+}
+
+
+@media (max-width: 375px) {
+
+    .navName {
+        font-size: 8.5px;
+        padding: .5rem .2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 700;
+    }
+}

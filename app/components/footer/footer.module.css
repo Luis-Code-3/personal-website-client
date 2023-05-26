@@ -50,3 +50,29 @@
 .svg:hover {
     color: rgb(181, 117, 242);
 }
+
+@media (max-width: 857px) {
+    .footerContainer {
+        gap: 20%;
+    }
+}
+
+@media (max-width: 650px) {
+    .footerContainer {
+        gap: 10%;
+    }
+}
+
+@media (max-width: 560px) {
+    .footerContainer {
+        flex-direction: column;
+        gap: .7rem;
+        padding: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .svg {
+        height: 20px;
+        width: 20px;
+    }
+}
