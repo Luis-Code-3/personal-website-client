@@ -3,6 +3,8 @@ import projects from "../../../data/projects.json"
 import { FaGithubSquare } from "react-icons/fa"
 import Link from "next/link"
 import ImageSlider from "@/app/components/ImageSlider"
+import { notFound } from "next/navigation"
+import { Metadata } from "next"
 
 type selectedProjectObj = {
     id: number;
@@ -16,14 +18,57 @@ type selectedProjectObj = {
     liveApp: string;
 }
 
-const page = () => {
+type PageProps = {
+    params: {id: string};
+}
+
+export async function generateStaticParams () {
+  return projects.map((project) => {
+    return {
+      id: project.id.toString()
+    }
+  })
+}
+
+export async function generateMetadata ({params}: PageProps): Promise<Metadata> {
+
+  const selectedProject: selectedProjectObj | undefined = projects.find((project) => {
+    return project.id.toString() === params.id;
+  });
+
+  if (!selectedProject) {
+    return {
+      title: "404 Not Found",
+      description: "Project was not found"
+    }
+  }
+
+  return {
+    title: selectedProject.name,
+    description: `Project selected is ${selectedProject.name}`
+  }
+}
+
+const page = ({params}: PageProps) => {
+  
 
     const selectedProject: selectedProjectObj[] = projects.filter((project) => {
-      return project.id === 1;
+      return project.id.toString() === params.id;
     })
-    
 
+    if (selectedProject.length === 0) {
+      return notFound();
+    }
 
+    const nextProjectId = () => {
+      // const currentId = params.id;
+      if (+params.id === projects.length) {
+        const nextId = "1";
+        return nextId
+      } else {
+        return (+params.id + 1).toString()
+      }
+    }
 
     return (
       <div className={styles.mainContainer}>
@@ -46,13 +91,16 @@ const page = () => {
               <div className={styles.linkContainer}>
                 <a className={styles.liveLink} href={selectedProject[0].liveApp}>Visit App</a>
                 <a className={styles.iconContainer} href={selectedProject[0].github}><FaGithubSquare className={styles.svg}/></a>
-                {selectedProject[0].techStack.map((tech:string) => {
-                  return <span>{tech}</span>
+                {selectedProject[0].techStack.map((tech:string, index) => {
+                  return <span key={index}>{tech}</span>
                 })}
               </div>
-
-              <p className={styles.bigDescription}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam sed numquam, reiciendis aliquid sit molestias nesciunt doloribus aspernatur? Velit animi veritatis excepturi laborum, a odit commodi minus rem nulla magnam inventore possimus in suscipit nihil consequuntur? Veritatis incidunt natus quidem provident, voluptatem deleniti quas commodi sit harum perspiciatis ipsam nesciunt modi non doloremque, assumenda voluptas? Impedit quia, aspernatur ipsam velit voluptate sequi deleniti eligendi maiores ad facilis tempore beatae ut.</p>
-              <Link className={styles.nextLink} href={`/projects/${2}`}>Next Project...</Link>
+              <div className={styles.containerDescription}>
+                {selectedProject[0].bigDescription.split('\n').map((paragraph, index) => {
+                  return <p key={index} className={styles.bigDescription}>{paragraph}</p>
+                })}
+              </div>
+              <Link className={styles.nextLink} href={`/projects/${nextProjectId()}`}>Next Project...</Link>
             </div>
         </div>
       </div>

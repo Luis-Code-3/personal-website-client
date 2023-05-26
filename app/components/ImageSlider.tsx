@@ -37,7 +37,7 @@ const ImageSlider = ({images}: ImageSliderProps) => {
   return (
     <div className={styles.sliderContainer}>
         {images.map((img, index) => {
-            return <Image className={`${styles.picture} ${index === currentPicture ? styles.pictureActive : ''}`} src={img} width={500} height={250} alt="Picture"/>
+            return <Image priority={true} key={index} className={`${styles.picture} ${index === currentPicture ? styles.pictureActive : ''}`} src={img} width={1000} height={500} alt="Picture"/>
         })}
         {/* <Image className={`${styles.picture} ${styles.pictureActive}`} src={images[currentPicture]} width={500} height={250} alt="Picture"/> */}
         <div onClick={prevPicture} className={styles.backButton}><FaAngleLeft className={styles.svg}/></div>
@@ -46,6 +46,7 @@ const ImageSlider = ({images}: ImageSliderProps) => {
         <div className={styles.containerDotsTwo}>
             {images.map((img, index) => {
                     return <div 
+                    key={index}
                     onClick={() => selectPicture(index)}
                     className={`${styles.dot} ${index === currentPicture ? styles.activeDot : ''}`}
                     ></div>

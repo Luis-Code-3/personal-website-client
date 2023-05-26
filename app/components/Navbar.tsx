@@ -2,7 +2,6 @@
 
 
 import styles from "./navbar.module.css"
-import Link from "next/link"
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa"
 import { useState, useEffect } from "react"
 import {useRouter, usePathname, useSearchParams} from "next/navigation"

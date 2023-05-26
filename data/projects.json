@@ -2,69 +2,67 @@
     {
       "id": 1,
       "name": "Collect Data",
-      "smallDescription": "A project that tracks collectible's sales data & displays analytics to users. Collects sales from eBay, Goldin Auctions, & Heritage",
-      "bigDescription": "five or seven sentences here",
-      "techStack": ["React", "Express", "Node", "MongoDB", "Render", "Netlify"],
-      "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png",
+      "smallDescription": "Collect Data tracks collectible's sales data from different marketplaces & displays analytics to users.",
+      "bigDescription": "Collect Data is a dynamic web application that serves as a comprehensive platform for tracking and analyzing sales data of various collectibles, including Pokemon cards, sports cards, video games, and manga. Designed with a user-centric approach, the app empowers enthusiasts and collectors to stay up-to-date with the latest market trends and make informed decisions. Leveraging cutting-edge technologies such as React, Express, Node.js, and MongoDB, Collect Data seamlessly integrates multiple marketplaces, consolidating data and presenting it in an intuitive and visually appealing manner.\nThrough its user-friendly interface, Collect Data enables users to effortlessly search for specific items within each category, facilitating easy access to detailed information on recent sales across different time frames. The app's line chart visualization allows users to analyze sales patterns and trends, empowering them to gain valuable insights into the market's behavior. Additionally, the application provides practical features such as the ability to create a personalized watchlist, enabling users to track their desired items and receive real-time updates on their availability and pricing. Moreover, Collect Data also facilitates the management of existing collections, allowing users to conveniently add and organize items already in their possession.\nWith its robust deployment on Netlify and Render, Collect Data guarantees a seamless and reliable user experience. By leveraging the power of technology and data, the app revolutionizes the way collectors interact with their hobbies, offering them an invaluable resource to enhance their decision-making processes and maximize their enjoyment of the collectibles market.",
+      "techStack": ["React", "Express", "Node", "MongoDB","Netlify", "Render"],
+      "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684985816/projectImages/Screen_Shot_2023-05-24_at_11.34.47_PM_tyryxx.png",
       "images": [
+        "https://res.cloudinary.com/dfwslusgb/image/upload/v1684985816/projectImages/Screen_Shot_2023-05-24_at_11.34.47_PM_tyryxx.png",
         "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png",
-        "https://res.cloudinary.com/dfwslusgb/image/upload/v1684873402/projectImages/Screen_Shot_2023-05-23_at_4.23.06_PM_hlqeth.png",
-        "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png",
-        "https://res.cloudinary.com/dfwslusgb/image/upload/v1684873402/projectImages/Screen_Shot_2023-05-23_at_4.23.06_PM_hlqeth.png",
-        "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png"
+        "https://res.cloudinary.com/dfwslusgb/image/upload/v1684985818/projectImages/Screen_Shot_2023-05-24_at_11.33.22_PM_elr3xa.png",
+        "https://res.cloudinary.com/dfwslusgb/image/upload/v1684985822/projectImages/Screen_Shot_2023-05-24_at_11.35.45_PM_jmitlx.png",
+        "https://res.cloudinary.com/dfwslusgb/image/upload/v1684985816/projectImages/Screen_Shot_2023-05-24_at_11.33.54_PM_usopeu.png"
       ],
-      "github": "github link url",
-      "liveApp": "deployed app link url here"
+      "github": "https://github.com/Luis-Code-3/collectible-analytics-client",
+      "liveApp": "https://eclectic-klepon-7221c8.netlify.app/"
     },
     {
         "id": 2,
         "name": "SnipedIO",
-        "smallDescription": "A project that tracks collectible's sales data & displays analytics to users. Collects sales from eBay, Goldin Auctions, & Heritage",
-        "bigDescription": "five or seven sentences here",
-        "techStack": ["React", "Express", "Node", "MongoDB", "Render", "Netlify"],
-        "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png",
+        "smallDescription": "SnipedIO tracks NFT sales data from the top collections & displays those analytics to users. The #1 NFT Market research tool.",
+        "bigDescription": "SnipedIO is an innovative web application specifically tailored for NFT enthusiasts, providing them with a comprehensive platform to track and analyze sales data from the top NFT collections. Leveraging real-time data sourced from the blockchain, SnipedIO offers users valuable insights into the ever-evolving NFT market. The app's intuitive interface, developed using React, Express, Node.js, and MongoDB, seamlessly integrates multiple APIs, including Etherscan, Cryptocompare, and Alchemy, to ensure accurate and up-to-date information for users.\nWith SnipedIO, users gain access to a wealth of essential analytics that empower them to make informed decisions. Through the app's user-friendly interface, users can easily view critical data points such as floor price, total sales volume, average price, market cap, and sales volume within their chosen time frame. This wealth of information allows collectors and investors to grasp the current state of the market and assess its overall performance. Furthermore, SnipedIO provides users with the ability to explore the top sales within a specific time frame, enabling them to stay updated on significant transactions and trends.\nAdditionally, SnipedIO offers detailed insights into the collections and individual NFTs it tracks. Users can delve deeper into specific NFTs to access their sales history, while also gaining a comprehensive breakdown of various collections. This comprehensive overview facilitates a deeper understanding of the market landscape and aids users in identifying valuable opportunities.",
+        "techStack": ["React", "Express", "Node", "MongoDB", "Netlify", "Fly"],
+        "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684988318/projectImages/Screen_Shot_2023-05-24_at_11.32.53_PM_hkwavh.png",
         "images": [
-          "image1 url here",
-          "image2 url here",
-          "image3 url here",
-          "image4 url here",
-          "image5 url here"
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684988318/projectImages/Screen_Shot_2023-05-24_at_11.32.53_PM_hkwavh.png",
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684988317/projectImages/Screen_Shot_2023-05-24_at_11.31.26_PM_e24fgi.png",
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684988317/projectImages/Screen_Shot_2023-05-24_at_11.32.31_PM_vb69g1.png",
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684988316/projectImages/Screen_Shot_2023-05-24_at_11.30.36_PM_ktxq2h.png",
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684988316/projectImages/Screen_Shot_2023-05-25_at_12.18.15_AM_y14cph.png"
         ],
-        "github": "github link url",
-        "liveApp": "deployed app link url here"
+        "github": "https://github.com/Luis-Code-3/nft-analytics-client",
+        "liveApp": "https://deft-bavarois-91faf2.netlify.app/"
       },
       {
         "id": 3,
-        "name": "Glassdoor",
-        "smallDescription": "A project that tracks collectible's sales data & displays analytics to users. Collects sales from eBay, Goldin Auctions, & Heritage",
-        "bigDescription": "five or seven sentences here",
-        "techStack": ["React", "Express", "Node", "MongoDB", "Render", "Netlify"],
-        "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png",
+        "name": "UniQ Marketplace",
+        "smallDescription": "UniQ is an NFT marketplace that allows users to buy/sell NFTs and create their own NFT collection.",
+        "bigDescription": "UniQ is a user-friendly NFT marketplace that provides a seamless platform for buying, selling, and creating personalized NFT collections. As a standalone application, UniQ offers a simplified yet effective approach to NFT transactions, making it an ideal choice for users seeking a straightforward and intuitive experience. Developed using Handlebars, Express, Node.js, MongoDB, and deployed on Fly.io, UniQ represents a significant milestone as my first full-stack project.\nUniQ introduces a token system within its user data model, enabling users to engage in NFT transactions with ease. Each user is allocated a specific amount of ETH tokens within their account, which they can freely utilize to purchase NFTs or add more ETH tokens to expand their collection. This streamlined approach eliminates the complexities associated with interacting directly with the blockchain, allowing users to focus on the enjoyment of browsing, acquiring, and curating their NFTs.\nUniQ's user interface is designed to be intuitive and user-friendly, promoting a seamless browsing and trading experience. Users can effortlessly explore the marketplace, browse available NFTs, and engage in transactions with just a few simple clicks. The platform supports both buying and selling, empowering users to participate actively in the NFT ecosystem. Additionally, UniQ offers the unique capability for users to create and showcase their personalized NFT collections, fostering a sense of creativity and ownership within the community.",
+        "techStack": ["Handlebars", "Express", "Node", "MongoDB", "Fly"],
+        "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684989202/projectImages/Screen_Shot_2023-05-25_at_12.31.34_AM_kvrj8w.png",
         "images": [
-          "image1 url here",
-          "image2 url here",
-          "image3 url here",
-          "image4 url here",
-          "image5 url here"
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684989202/projectImages/Screen_Shot_2023-05-25_at_12.31.34_AM_kvrj8w.png",
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684989201/projectImages/Screen_Shot_2023-05-25_at_12.31.50_AM_yxiuti.png",
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684989196/projectImages/Screen_Shot_2023-05-25_at_12.32.25_AM_yuuskz.png",
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684989198/projectImages/Screen_Shot_2023-05-25_at_12.32.56_AM_vsnstf.png",
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684989198/projectImages/Screen_Shot_2023-05-25_at_12.31.59_AM_basnf3.png"
         ],
-        "github": "github link url",
-        "liveApp": "deployed app link url here"
+        "github": "https://github.com/Luis-Code-3/ironhack-project-two",
+        "liveApp": "https://uniq-project.fly.dev/"
       },
       {
         "id": 4,
-        "name": "Personal Website",
-        "smallDescription": "A project that tracks collectible's sales data & displays analytics to users. Collects sales from eBay, Goldin Auctions, & Heritage",
-        "bigDescription": "five or seven sentences here",
-        "techStack": ["React", "Express", "Node", "MongoDB", "Render", "Netlify"],
-        "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684774276/projectImages/Screen_Shot_2023-05-22_at_12.50.51_PM_nggezo.png",
+        "name": "Personal Portfolio",
+        "smallDescription": "My personal portfolio to display work experience, education, skills, and created projects to potential employers.",
+        "bigDescription": "My personal portfolio is a showcase of my work experience, education, skills, and noteworthy projects, carefully curated to leave a lasting impression on potential employers. Leveraging the power of Framer Motion, the portfolio offers smooth animations that enhance the overall visual appeal and create an engaging user experience. With a sleek and intuitive user interface, my portfolio ensures that employers can effortlessly navigate through my showcased work and gain insights into my design skills. The seamless navigation and polished aesthetics provide employers with a pleasant browsing experience, allowing them to explore my portfolio with ease and efficiency.\nAdditionally, the portfolio showcases a selection of my most notable projects, demonstrating my ability to deliver impactful and visually appealing solutions. Each project is accompanied by relevant details and descriptions, providing employers with valuable insights into my creative process and problem-solving abilities.",
+        "techStack": ["NextJS", "React", "TypeScript", "Netlify"],
+        "thumbnailImage": "https://res.cloudinary.com/dfwslusgb/image/upload/v1684989366/projectImages/Screen_Shot_2023-05-25_at_12.21.03_AM_o6jxp1.png",
         "images": [
-          "image1 url here",
-          "image2 url here",
-          "image3 url here",
-          "image4 url here",
-          "image5 url here"
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684989366/projectImages/Screen_Shot_2023-05-25_at_12.21.03_AM_o6jxp1.png",
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684989368/projectImages/Screen_Shot_2023-05-25_at_12.21.29_AM_p5bkit.png",
+          "https://res.cloudinary.com/dfwslusgb/image/upload/v1684989368/projectImages/Screen_Shot_2023-05-25_at_12.35.26_AM_eujbhb.png"
         ],
-        "github": "github link url",
+        "github": "https://github.com/Luis-Code-3/personal-website-client",
         "liveApp": "deployed app link url here"
       }
   ]
