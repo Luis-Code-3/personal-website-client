@@ -73,9 +73,13 @@
     }
 
     .linkContainer {
-        gap: 2rem;
+        gap: .5rem;
         width: 100%;
         justify-content: center;
+    }
+
+    .navLinks {
+        font-size: 95%;
     }
 }
 
@@ -85,9 +89,7 @@
     }
 
     .linkContainer {
-        gap: .4rem;
-        width: 100%;
-        justify-content: center;
+        gap: .5rem;
     }
 
     .navLinks {
