@@ -37,7 +37,7 @@
 .profPicture {
     position: absolute;
     transform: scale(.6);
-    top: -48%;
+    top: -60%;
     left: -43%;
     object-fit: cover;
 }
@@ -108,7 +108,10 @@
     color: rgb(255, 255, 255, .7);
     animation: fadeUp 1s backwards;
     animation-delay: .5s;
+}
 
+.highlight {
+    color: rgb(163, 155, 238);
 }
 
 @keyframes fadeUp {

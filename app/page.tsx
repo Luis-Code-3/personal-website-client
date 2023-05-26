@@ -1,9 +1,9 @@
 import styles from './page.module.css'
-import About from './components/About'
-import InfoSection from './components/InfoSection'
-import ProjectSection from './components/ProjectSection'
+import About from './components/about_section/About'
+import InfoSection from './components/info_section/InfoSection'
+import ProjectSection from './components/projects_section/ProjectSection'
 import projects from "../data/projects.json"
-import Contact from './components/Contact'
+import Contact from './components/contact_section/Contact'
 
 export default function Home() {
 

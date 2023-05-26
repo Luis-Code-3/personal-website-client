@@ -2,7 +2,7 @@ import styles from "./page.module.css"
 import projects from "../../../data/projects.json"
 import { FaGithubSquare } from "react-icons/fa"
 import Link from "next/link"
-import ImageSlider from "@/app/components/ImageSlider"
+import ImageSlider from "../../components/image_slider/ImageSlider"
 import { notFound } from "next/navigation"
 import { Metadata } from "next"
 

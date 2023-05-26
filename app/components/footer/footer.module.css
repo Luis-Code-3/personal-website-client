@@ -8,8 +8,12 @@
     z-index: 2;
     padding: 2rem 2rem;
     background-color: rgb(26,22,38);
-    gap: 30%;
+    gap: 46%;
     font-size: 90%;
+}
+
+.purpText {
+    color: rgb(160, 63, 251);
 }
 
 .linkContainer {

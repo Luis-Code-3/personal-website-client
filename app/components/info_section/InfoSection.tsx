@@ -1,8 +1,18 @@
 "use client"
 
-import InfoBlock from "./InfoBlock"
+// import InfoBlock from "./InfoBlock"
 import styles from "./infoSection.module.css"
 import { useState, useEffect } from "react"
+import Experience from "./Experience";
+import Education from "./Education";
+import Technologies from "./Technologies";
+import SoftSkills from "./SoftSkills";
+import Hobbies from "./Hobbies";
+
+type InfoBlockProps = {
+    currentTab: string,
+    initialLoad: boolean,
+}
 
 type NavigationProps = {
     currentTab: string,
@@ -33,6 +43,37 @@ const Navigation = ({setCurrentTab, currentTab}: NavigationProps) => {
     </div>
     </>
   )
+}
+
+const InfoBlock = ({currentTab, initialLoad}: InfoBlockProps) => {
+    
+    
+
+  switch (currentTab) {
+      case "experience":
+          return (
+              <Experience initialLoad = {initialLoad}/>
+          );
+      case "education":
+          return (
+              <Education initialLoad = {initialLoad}/>
+          );
+      case "technologies":
+          return (
+              <Technologies/>
+          );
+      case "skills":
+          return (
+              <SoftSkills/>
+          );
+      case "hobbies":
+          return (
+              <Hobbies/>
+          );
+      default:
+          return null;
+  }
+
 }
 
 const InfoSection = () => {
